@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forgot-password">
+            <button class="close-button" onclick="closeForm()">&#10006;</button>
+            <form action="/login" method="POST">
+            <h2>Forgot Password</h2>
+            <form id="forgotPasswordForm">
+                <div class="input-group">
+                    <input type="email" id="emailInput" required>
+                    <label for="emailInput" id="emailLabel">Email</label>
+                </div>
+                <button id="sendOTPBtn">Send OTP</button>
+                <div id="otpInputContainer" class="input-group hidden">
+                    <input type="text" id="otpInput" required>
+                    <label for="otpInput">OTP</label>
+                    <!-- <input type="text" id="otpConfirmInput" placeholder="Enter OTP"> -->
+                </div>
+                <button id="submitOTPBtn" class="hidden">Submit OTP</button>
+            </form>
+        </div>
+
+        <!-- Reset Password container (initially hidden) -->
+        <div class="reset-password hidden">
+            <button class="close-button" onclick="closeForm()">&#10006;</button>
+            <form action="/login" method="POST">
+            <h2>Reset Password</h2>
+            <p class="spacedo">Enter your new password below.</p>
+            <div class="input-group">
+                <input type="password" id="newPasswordInput" required>
+                <label for="newPasswordInput">New Password</label>
+            </div>
+            <button id="resetBtn" class="hidden">Reset Password</button>
+        </div>
+    </div>
+    <script src="forgot.js"></script>
+</body>
+</html>
+

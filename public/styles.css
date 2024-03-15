@@ -1,0 +1,117 @@
+
+body {
+ font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh; /* Ensure body takes at least the full viewport height */
+  background-image: url('./assets/bg.jpg'); /* Replace 'background-image.jpg' with your image path */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  height: 50px;
+}
+
+
+.orbitron-regular {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.bungee-hairline-regular {
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 400;
+    font-style:bold;
+  }
+  
+.body h1 {
+    font-family: "Bungee Hairline", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .body p{
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .header {
+    
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    margin-top: 10px;
+    flex-grow: 1; /* Grow to fill remaining space */
+    text-align: center;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    
+  }
+  .menu a:hover {
+    color: #007bff;
+  }
+  
+  .buttons {
+    margin-left: auto; /* Push to the right */
+  }
+  
+  .buttons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  .buttons a:hover {
+    background-color: #fff;
+    color: #007bff;
+  }
+  
+  .body {
+    flex: 1; /* Fill remaining space */
+    padding: 50px;
+    text-align: center;
+    color: rgb(238, 238, 238);
+  }
+  
+  .footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .body a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: "Orbitron", sans-serif;
+  }
+  .body a:hover {
+    background-color: #fff;
+    color: #007bff;
+  }
+  

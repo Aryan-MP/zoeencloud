@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register Page</title>
+    <meta name="google-signin-client_id" content="61342625245-91e3tpg7do6sfu5k7dhdafok7uaap1nb.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" type="text/css" href="/login.css">
+</head>
+    
+<body>
+
+    <div class="wrapper">
+
+        <!-- Login Form -->
+        <div class="form-wrapper sign-in">
+            <button class="close-button" onclick="closeForm()">&#10006;</button>
+            <form action="/login" method="POST">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="text" name="username" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <label for="">Password</label>
+                    <a href="./forgotpass/forgot.html" class="forgot-link">Forgot Password?</a> <!-- Changed from "Forgot Password?" to "Forgot Password?" -->
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit">Login</button>
+                <div class="signIn-link">
+                    <p>Don't have an account? <a href="#" class="signUpBtn-link">Register</a></p>
+                </div>
+                <div class="g-signin2" id="googleSignIn" data-onsuccess="onSignIn"></div>
+                <div id="content"></div>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-wrapper sign-up">
+            <button class="close-button" onclick="closeForm()">&#10006;</button>
+            <form action="/signup" method="POST">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" name="username" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="signUp-link">
+                    <p>Already have an account? <a href="/login.html" class="signInBtn-link">Log In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
